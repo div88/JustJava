@@ -131,13 +131,13 @@ public class MainActivity extends AppCompatActivity {
         return price;
     }
 
-    private String createOrderSummary(int price, int quantity, boolean whippedCreamStatus, boolean chocolateStatus, String customerName){
+    private String createOrderSummary(int price, int quantity, boolean whippedCreamStatus, boolean chocolateStatus, String name){
         TextView priceTextView = (TextView) findViewById(R.id.order_summary_text_view);
-        String orderSummary = "Name: " + customerName + "\nQuantity: " + quantity;
-        orderSummary += "\nAdd Whipped cream?  " + whippedCreamStatus;
-        orderSummary += "\nAdd Chocolate?  " + chocolateStatus;
-        orderSummary += "\nTotal = $" + price;
-        orderSummary += "\nThank you!";
+        String orderSummary = getString(R.string.order_summary_name, name) + "\nQuantity: " + quantity;
+        orderSummary += "\n" + getString(R.string.add_whipped_cream)  + whippedCreamStatus;
+        orderSummary += "\n" + getString(R.string.add_chocolate) + chocolateStatus;
+        orderSummary += "\n" + getString(R.string.total)+ price;
+        orderSummary += "\n" + getString(R.string.thank_you);
         //priceTextView.setText(orderSummary);
         return orderSummary;
     }

@@ -14,12 +14,12 @@
         android:id="@+id/customer_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:hint="@string/order_summary_name"
         android:inputType="textCapWords" />
 
 
     <TextView
-        android:text="Toppings"
+        android:text="@string/toppings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="16sp"
@@ -33,7 +33,7 @@
         android:id="@+id/topping_whippedCream"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Whipped Cream"
+        android:text="@string/whipped_cream"
         android:paddingLeft="24dp"
         android:textSize="16sp"
         android:textAppearance="?android:textAppearanceMedium" />
@@ -42,13 +42,13 @@
         android:id="@+id/topping_chocolate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chocolate"
+        android:text="@string/chocolate"
         android:paddingLeft="24dp"
         android:textSize="16sp"
         android:textAppearance="?android:textAppearanceMedium" />
 
     <TextView
-        android:text="Quantity"
+        android:text="@string/quantity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="16sp"
@@ -96,7 +96,7 @@
 
 
     <TextView
-        android:text="Order Summary"
+        android:text="@string/order_summary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="16sp"
@@ -120,7 +120,7 @@
         android:id="@+id/button_id"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="ORDER"
+        android:text="@string/order"
         android:onClick="submitOrder"/>
 
 
